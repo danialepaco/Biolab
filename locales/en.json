@@ -1,0 +1,92 @@
+{
+  "wmatch": "OUR PRIORITY",
+  "login": {
+    "welcome": "Welcome {{name}} to our localized app!",
+    "signup_button": "You are a member? Log In",
+    "login": "Log In",
+    "register": "Create account",
+    "redes": "Log In with social networks",
+    "facebook": "Continue with Facebook",
+    "forgot": "Forgot password",
+    "required_fields_error": "Username and password are required"
+  },
+  "register": {
+    "paso1": "Continue",
+    "facebook": "Continue with Facebook",
+    "textFacebook": "We don't publish on your FB account",
+    "opt": "OR",
+    "terms": "Terms and Conditions",
+    "name": "First name",
+    "lastName": "Last name",
+    "id": "Identification",
+    "address": "Address",
+    "about": "About you",
+    "distance": "Maximum distance",
+    "silence": "Mute notifications",
+    "ownGen": "Your gender",
+    "fullName": "Full name",
+    "password": "Password",
+    "username": "Username",
+    "male": "Man",
+    "female": "Woman",
+    "email": "Email",
+    "age": "Date of birth",
+    "allInputs": "All inputs required",
+    "errorFullName": "Invalid full name",
+    "errorEmail": "Invalid email",
+    "errorPassword": "Invalid password",
+    "errorUsername": "Invalid username",
+    "errorSex": "Invalid sex",
+    "errorAge": "Invalid age",
+    "errorTitle": "Register fail",
+    "successTitle": "Succesfully registered",
+    "photo": "Your photo",
+    "sexRequired": "Invalid sex, is required",
+    "imageRequired": "Image is required",
+    "ageRequired": "Date of birth is required"
+  },
+  "main": {
+    "title": "YOUR HEALTH",
+    "register": "Register",
+    "bill": "Bills",
+    "wait": "Waiting for approvement",
+    "ref": "Reference number",
+    "paid": "Pay",
+    "more": "Show more",
+    "copy": "Copied to clipboard!",
+    "done": "Payment sent successfully and awaiting verification",
+    "registerContinue": "Continue register",
+    "iAm": "I am...",
+    "profile": "Profile",
+    "login": "Log In",
+    "recover": "Recover Password",
+    "internet": "No Internet Connection",
+    "password": "Change password",
+    "pro": "Buy pro version",
+    "pay": "Pay with credit card",
+    "changes": "Save changes"
+  },
+  "home": {
+    "actionSheet": "Pick one option",
+    "camera": "Camera",
+    "biblio": "Library",
+    "cancel": "Cancel",
+    "alerta": "Alert",
+    "upload": "Upload Image",
+    "comment": "Comment"
+  },
+  "forgot": {
+    "send": "Send",
+    "code": "Code",
+    "password": "Password",
+    "confirmPassword": "Confirm Password"
+  },
+  "swiper": {
+    "searching": "Looking for people near you"
+  },
+  "pay": {
+    "code": "Please enter reference number",
+    "image": "Please enter the image of the reference",
+    "pay": "The total amount is:"
+  }
+}

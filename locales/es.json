@@ -1,0 +1,92 @@
+{
+  "wmatch": "NUESTRA PRIORIDAD",
+  "login": {
+    "welcome": "Welcome {{name}} to our localized app!",
+    "signup_button": "¿Eres miembro? Inicia sesión",
+    "login": "Iniciar sesión",
+    "register": "Crear cuenta",
+    "redes": "Iniciar sesión con redes sociales",
+    "facebook": "Iniciar sesión con Facebook",
+    "forgot": "Recuperar Contraseña",
+    "required_fields_error": "El usuario y la clave son necesarios"
+  },
+  "register": {
+    "paso1": "Continuar",
+    "facebook": "Continuar con Facebook",
+    "textFacebook": "No publicamos nada en tu FB",
+    "opt": "o también",
+    "terms": "Términos y Condiciones",
+    "name": "Nombre",
+    "lastName": "Apellido",
+    "id": "Identificación",
+    "address": "Dirección",
+    "about": "Acerca de ti",
+    "distance": "Distancia máxima",
+    "silence": "Silenciar notificaciones",
+    "ownGen": "Tu genero",
+    "fullName": "Nombre completo",
+    "errorFullName": "Nombre completo inválido",
+    "password": "Contraseña",
+    "username": "Usuario",
+    "male": "Hombre",
+    "female": "Mujer",
+    "email": "Correo eléctronico",
+    "age": "Tu cumpleaños es ...",
+    "allInputs": "Todos los campos son requeridos",
+    "errorEmail": "Corre Inválido",
+    "errorPassword": "Contraseña inválida",
+    "errorUsername": "Usuario inválido",
+    "errorSex": "Sexo inválido",
+    "errorAge": "Edad inválida",
+    "errorTitle": "Registro fallido",
+    "successTitle": "Registrado exitosamente",
+    "photo": "Tu foto",
+    "sexRequired": "Sexo es requerido",
+    "imageRequired": "Imagen es requerida",
+    "ageRequired": "Fecha de nacimiento es requerida"
+  },
+  "main": {
+    "title": "TU SALUD",
+    "register": "Registro",
+    "bill": "Facturas",
+    "paid": "Pago",
+    "more": "Ver más",
+    "copy": "¡Copiado al portapapeles!",
+    "done": "Pago enviado con éxito y en espera de verificación",
+    "wait": "En espera de ser verificado",
+    "ref": "Numero de referencia",
+    "registerContinue": "Continuar registro",
+    "iAm": "Soy...",
+    "profile": "Perfil",
+    "login": "Iniciar Sesión",
+    "recover": "Recuperar Contraseña",
+    "internet": "No hay conexión a Internet",
+    "password": "Cambiar contraseña",
+    "pro": "Comprar version pro",
+    "pay": "Pagar con tarjeta de credito",
+    "changes": "Guardar cambios"
+  },
+  "home": {
+    "actionSheet": "Elija una opción",
+    "camera": "Camara",
+    "biblio": "Biblioteca",
+    "cancel": "Cancelar",
+    "alerta": "Alerta",
+    "upload": "Subir Imagen",
+    "comment": "Comentario"
+  },
+  "forgot": {
+    "send": "Enviar",
+    "code": "Codigo",
+    "password": "Password",
+    "confirmPassword": "Confirmar Password"
+  },
+  "swiper": {
+    "searching": "Buscando personas cerca de tí"
+  },
+  "pay": {
+    "code": "Por favor ingrese el número de referencia",
+    "image": "Por favor ingrese la imagen de la referencia",
+    "pay": "El monto total es:"
+  }
+}
