@@ -20,7 +20,7 @@ function publicProfile(token, id) {
         headers: authHeader(token)
     };
 
-    return fetch(URL + 'public-profile/' + id + '/', requestOptions);
+    return fetch(URL + 'accounts/' + id + '/', requestOptions);
 }
 
 /**

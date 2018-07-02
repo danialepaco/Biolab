@@ -37,11 +37,14 @@ export default class Message extends Component {
 
       return {
         title: strings('main.bill'),
-        // headerRight: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/logout.png')} /></TouchableOpacity>
+        headerLeft: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/profile.png')} /></TouchableOpacity>
       };
     };
 
     componentDidMount() {
+
+      this.props.navigation.setParams({logout: () => this._logout()});
+
       this.chatsVar = APP_STORE.CHAT_EVENT.subscribe(state => {
         console.log("Messages:componentDidMount:chatsVar", state);
         if (state.chats) {
@@ -59,6 +62,10 @@ export default class Message extends Component {
         }
       });
       getChat()
+    }
+
+    _logout = () => {
+      this.props.navigation.navigate('Profile');
     }
 
     componentWillUnmount() {

@@ -16,6 +16,7 @@ function loginAction(username, password) {
             console.log(`loginAction:JSON:`, json);
             if (response.ok) {
                 APP_STORE.TOKEN_EVENT.next({"token": json.token});
+                APP_STORE.ID_EVENT.next({"id": json.id.toString()});
                 return;
             }
             APP_STORE.APP_EVENT.next({"error": json});

@@ -45,10 +45,10 @@ export default styles = StyleSheet.create({
       fontSize: 14,
     },
     buttonRight: {
-      marginRight: 18
+      marginLeft: 15
     },
     navRight: {
-      height:18,
-      width:18
+      height:25,
+      width:25
     },
 });
