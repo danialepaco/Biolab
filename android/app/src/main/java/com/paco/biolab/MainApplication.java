@@ -1,4 +1,4 @@
-package weedmatch.fourgeeks.co;
+package com.paco.biolab;
 
 import android.app.Application;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;

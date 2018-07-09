@@ -1,4 +1,4 @@
-package weedmatch.fourgeeks.co;
+package com.paco.biolab;
 
 import com.facebook.react.ReactActivity;
 import android.content.Intent;
@@ -11,7 +11,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "weedmatch";
+        return "Biolab";
     }
 
     @Override

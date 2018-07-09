@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "weedmatch.app"
-               BlueprintName = "weedmatch"
-               ReferencedContainer = "container:weedmatch.xcodeproj">
+               BuildableName = "Biolab.app"
+               BlueprintName = "Biolab"
+               ReferencedContainer = "container:Biolab.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "weedmatchTests.xctest"
-               BlueprintName = "weedmatchTests"
-               ReferencedContainer = "container:weedmatch.xcodeproj">
+               BuildableName = "BiolabTests.xctest"
+               BlueprintName = "BiolabTests"
+               ReferencedContainer = "container:Biolab.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "weedmatchTests.xctest"
-               BlueprintName = "weedmatchTests"
-               ReferencedContainer = "container:weedmatch.xcodeproj">
+               BuildableName = "BiolabTests.xctest"
+               BlueprintName = "BiolabTests"
+               ReferencedContainer = "container:Biolab.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "weedmatch.app"
-            BlueprintName = "weedmatch"
-            ReferencedContainer = "container:weedmatch.xcodeproj">
+            BuildableName = "Biolab.app"
+            BlueprintName = "Biolab"
+            ReferencedContainer = "container:Biolab.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "weedmatch.app"
-            BlueprintName = "weedmatch"
-            ReferencedContainer = "container:weedmatch.xcodeproj">
+            BuildableName = "Biolab.app"
+            BlueprintName = "Biolab"
+            ReferencedContainer = "container:Biolab.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "weedmatch.app"
-            BlueprintName = "weedmatch"
-            ReferencedContainer = "container:weedmatch.xcodeproj">
+            BuildableName = "Biolab.app"
+            BlueprintName = "Biolab"
+            ReferencedContainer = "container:Biolab.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

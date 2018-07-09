@@ -12,7 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* weedmatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* weedmatchTests.m */; };
+		00E356F31AD99517003FC87E /* BiolabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BiolabTests.m */; };
 		0415B08B15E84BF9947E7B72 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 057A7D663EBB4C5EB87A1285 /* Roboto.ttf */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -42,7 +42,7 @@
 		248D164A20A3FA5000B5791C /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248D164920A3FA5000B5791C /* QBImagePicker.framework */; };
 		248D164B20A3FA5000B5791C /* QBImagePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 248D164920A3FA5000B5791C /* QBImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24E92D6220B70D89005123BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E92D6120B70D88005123BF /* GoogleService-Info.plist */; };
-		2AC1CB5C2B71B176C9F9978B /* libPods-weedmatchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DACD42FF98D2CA9BF18B867 /* libPods-weedmatchTests.a */; };
+		2AC1CB5C2B71B176C9F9978B /* libPods-BiolabTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DACD42FF98D2CA9BF18B867 /* libPods-BiolabTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -54,20 +54,20 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* weedmatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* weedmatchTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* BiolabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BiolabTests.m */; };
 		405B79EE74D04595B1C87FD7 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738BD858B01C451281A57029 /* Roboto_medium.ttf */; };
 		5653AE1E59844FD5A7FC06C2 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D7F071DCE694D83A4199A26 /* Ionicons.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		691182E8D15442B481B2E3E4 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4694AB01034FB6A8D17AA4 /* FontAwesome.ttf */; };
 		736E8F08CD1948FE87ADB627 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFD38C41DF4497DB9B81875 /* Entypo.ttf */; };
-		801EE351400B5A08F772A380 /* libPods-weedmatch-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7391E453D18CA55E44964C /* libPods-weedmatch-tvOSTests.a */; };
+		801EE351400B5A08F772A380 /* libPods-Biolab-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7391E453D18CA55E44964C /* libPods-Biolab-tvOSTests.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9FA5A1BCE71B4787817BC201 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30DB7E535614453D8F2E59A9 /* MaterialIcons.ttf */; };
 		A3C81443377F4496925DEA9D /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD98FC0ED445FA8B3E2445 /* Octicons.ttf */; };
 		A600609F805C4924B1210C44 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8328CC9EC0D24C209461CAB8 /* EvilIcons.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BD0A5DDB206F357B00A69355 /* libRNI18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0A5DD7206F350D00A69355 /* libRNI18n.a */; };
-		D5C35A7CDAC044C7C2D6865E /* libPods-weedmatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D9B33A286D5F8141C3CC22 /* libPods-weedmatch.a */; };
+		D5C35A7CDAC044C7C2D6865E /* libPods-Biolab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D9B33A286D5F8141C3CC22 /* libPods-Biolab.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +111,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = weedmatch;
+			remoteInfo = Biolab;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -160,7 +160,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = weedmatch;
+			remoteInfo = Biolab;
 		};
 		246B995F206B29400027179F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -258,7 +258,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "weedmatch-tvOS";
+			remoteInfo = "Biolab-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -459,37 +459,37 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* weedmatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weedmatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* BiolabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiolabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* weedmatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weedmatchTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* BiolabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiolabTests.m; sourceTree = "<group>"; };
 		057A7D663EBB4C5EB87A1285 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		0807F8B070A24BAEAB4C048D /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		10222B651F66447B9D49B939 /* RCTBEEPickerManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBEEPickerManager.xcodeproj; path = "../node_modules/react-native-picker/ios/RCTBEEPickerManager.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* weedmatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weedmatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = weedmatch/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = weedmatch/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Biolab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biolab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Biolab/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Biolab/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = weedmatch/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = weedmatch/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = weedmatch/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Biolab/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Biolab/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Biolab/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		21352B46DF0543DFAA352750 /* libRNFetchBlob.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFetchBlob.a; sourceTree = "<group>"; };
-		240837F120A8F38600FBC63E /* QBImagePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QBImagePicker.framework; path = "../../../Library/Developer/Xcode/DerivedData/weedmatch-dehhwhqpecznhmfcggvmguecleyf/Build/Products/Debug-iphoneos/QBImagePicker.framework"; sourceTree = "<group>"; };
-		240837F220A8F38600FBC63E /* RSKImageCropper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSKImageCropper.framework; path = "../../../Library/Developer/Xcode/DerivedData/weedmatch-dehhwhqpecznhmfcggvmguecleyf/Build/Products/Debug-iphoneos/RSKImageCropper.framework"; sourceTree = "<group>"; };
+		240837F120A8F38600FBC63E /* QBImagePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QBImagePicker.framework; path = "../../../Library/Developer/Xcode/DerivedData/Biolab-dehhwhqpecznhmfcggvmguecleyf/Build/Products/Debug-iphoneos/QBImagePicker.framework"; sourceTree = "<group>"; };
+		240837F220A8F38600FBC63E /* RSKImageCropper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSKImageCropper.framework; path = "../../../Library/Developer/Xcode/DerivedData/Biolab-dehhwhqpecznhmfcggvmguecleyf/Build/Products/Debug-iphoneos/RSKImageCropper.framework"; sourceTree = "<group>"; };
 		2408383920A8F62100FBC63E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		2408383A20A8F62200FBC63E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		2408383B20A8F62200FBC63E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2408383C20A8F62200FBC63E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		248D164620A3FA5000B5791C /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		248D164920A3FA5000B5791C /* QBImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QBImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2498EC88792B2CCCFCBF29DE /* Pods-weedmatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weedmatchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-weedmatchTests/Pods-weedmatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		2498EC88792B2CCCFCBF29DE /* Pods-BiolabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiolabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiolabTests/Pods-BiolabTests.release.xcconfig"; sourceTree = "<group>"; };
 		24E92D6120B70D88005123BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		24FE648B20ADDC5100684A1D /* weedmatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = weedmatch.entitlements; path = weedmatch/weedmatch.entitlements; sourceTree = "<group>"; };
+		24FE648B20ADDC5100684A1D /* Biolab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Biolab.entitlements; path = Biolab/Biolab.entitlements; sourceTree = "<group>"; };
 		25F099AFC3BE4F338F250AA6 /* libLRDRCTSimpleToast.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLRDRCTSimpleToast.a; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* weedmatch-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weedmatch-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* weedmatch-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weedmatch-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Biolab-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Biolab-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Biolab-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Biolab-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7F071DCE694D83A4199A26 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		30DB7E535614453D8F2E59A9 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -497,13 +497,13 @@
 		36EC131E618C4BF7B759E401 /* libRNCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCamera.a; sourceTree = "<group>"; };
 		39DF23BBD93E4611AE4CF6D8 /* libimageCropPicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libimageCropPicker.a; sourceTree = "<group>"; };
 		481A3C387A8947A7A9028A29 /* RNSpinkit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSpinkit.xcodeproj; path = "../node_modules/react-native-spinkit/ios/RNSpinkit.xcodeproj"; sourceTree = "<group>"; };
-		4DACD42FF98D2CA9BF18B867 /* libPods-weedmatchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weedmatchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DACD42FF98D2CA9BF18B867 /* libPods-BiolabTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BiolabTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52794E013148466E86FB3FA2 /* libRCTBEEPickerManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBEEPickerManager.a; sourceTree = "<group>"; };
 		5C295E0E48E14CC7B99DAE9B /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		5C8D977393B3482E942FA313 /* RNToastNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNToastNative.xcodeproj; path = "../node_modules/react-native-toast-native/ios/RNToastNative.xcodeproj"; sourceTree = "<group>"; };
 		5D601FBC63DE41FFAB9A2540 /* imageCropPicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = imageCropPicker.xcodeproj; path = "../node_modules/react-native-image-crop-picker/ios/imageCropPicker.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		5F462E79F5FE153727C0A912 /* Pods-weedmatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weedmatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weedmatch/Pods-weedmatch.debug.xcconfig"; sourceTree = "<group>"; };
+		5F462E79F5FE153727C0A912 /* Pods-Biolab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biolab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Biolab/Pods-Biolab.debug.xcconfig"; sourceTree = "<group>"; };
 		5F726378684A4537B29ABC9F /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		628346CD7C124EC4AEBE05D9 /* libRNToastNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNToastNative.a; sourceTree = "<group>"; };
 		6EBD98FC0ED445FA8B3E2445 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -512,25 +512,25 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8328CC9EC0D24C209461CAB8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		839A3E4095194CEEA2482657 /* libRNSpinkit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSpinkit.a; sourceTree = "<group>"; };
-		A8E366C6E20C9E97CCC1FC36 /* Pods-weedmatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weedmatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-weedmatch/Pods-weedmatch.release.xcconfig"; sourceTree = "<group>"; };
+		A8E366C6E20C9E97CCC1FC36 /* Pods-Biolab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biolab.release.xcconfig"; path = "Pods/Target Support Files/Pods-Biolab/Pods-Biolab.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B00BC1BEA85F4EA686A39129 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		B4E7018FB00541A5AAB6339C /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		BAAE03AF583548CBB368BAC4 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		BD0A5DA9206F350C00A69355 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		C21663007BDC461FA6EF3409 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
-		CE49DF11C4A47D646AD7399C /* Pods-weedmatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weedmatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weedmatchTests/Pods-weedmatchTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D5B2059F3BEC35B31E90A1B0 /* Pods-weedmatch-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weedmatch-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-weedmatch-tvOSTests/Pods-weedmatch-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE49DF11C4A47D646AD7399C /* Pods-BiolabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiolabTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiolabTests/Pods-BiolabTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B2059F3BEC35B31E90A1B0 /* Pods-Biolab-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biolab-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Biolab-tvOSTests/Pods-Biolab-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D71F205DB98E40D0A02C488B /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
 		DC4694AB01034FB6A8D17AA4 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		DCF60834D71D43C5B499D8CF /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		DF2344FA45D64ED68D211F1F /* libRNShare.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNShare.a; sourceTree = "<group>"; };
 		DF950D09C18A47D2AAC0FBAE /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
-		EE3105422CE6921EF117F961 /* Pods-weedmatch-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weedmatch-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weedmatch-tvOSTests/Pods-weedmatch-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F6D9B33A286D5F8141C3CC22 /* libPods-weedmatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weedmatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3105422CE6921EF117F961 /* Pods-Biolab-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biolab-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Biolab-tvOSTests/Pods-Biolab-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D9B33A286D5F8141C3CC22 /* libPods-Biolab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Biolab.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7C25FF9FC84DF38A8FDAED /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
 		FCFD38C41DF4497DB9B81875 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		FF7391E453D18CA55E44964C /* libPods-weedmatch-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weedmatch-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7391E453D18CA55E44964C /* libPods-Biolab-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Biolab-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -539,7 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				2AC1CB5C2B71B176C9F9978B /* libPods-weedmatchTests.a in Frameworks */,
+				2AC1CB5C2B71B176C9F9978B /* libPods-BiolabTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +574,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				1E5BBEA84551485E8498D5AD /* libRNFirebase.a in Frameworks */,
-				D5C35A7CDAC044C7C2D6865E /* libPods-weedmatch.a in Frameworks */,
+				D5C35A7CDAC044C7C2D6865E /* libPods-Biolab.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +597,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				801EE351400B5A08F772A380 /* libPods-weedmatch-tvOSTests.a in Frameworks */,
+				801EE351400B5A08F772A380 /* libPods-Biolab-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,13 +646,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* weedmatchTests */ = {
+		00E356EF1AD99517003FC87E /* BiolabTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* weedmatchTests.m */,
+				00E356F21AD99517003FC87E /* BiolabTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = weedmatchTests;
+			path = BiolabTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -666,12 +666,12 @@
 		094DF0CCA5E22DEC046EF8FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F462E79F5FE153727C0A912 /* Pods-weedmatch.debug.xcconfig */,
-				A8E366C6E20C9E97CCC1FC36 /* Pods-weedmatch.release.xcconfig */,
-				EE3105422CE6921EF117F961 /* Pods-weedmatch-tvOSTests.debug.xcconfig */,
-				D5B2059F3BEC35B31E90A1B0 /* Pods-weedmatch-tvOSTests.release.xcconfig */,
-				CE49DF11C4A47D646AD7399C /* Pods-weedmatchTests.debug.xcconfig */,
-				2498EC88792B2CCCFCBF29DE /* Pods-weedmatchTests.release.xcconfig */,
+				5F462E79F5FE153727C0A912 /* Pods-Biolab.debug.xcconfig */,
+				A8E366C6E20C9E97CCC1FC36 /* Pods-Biolab.release.xcconfig */,
+				EE3105422CE6921EF117F961 /* Pods-Biolab-tvOSTests.debug.xcconfig */,
+				D5B2059F3BEC35B31E90A1B0 /* Pods-Biolab-tvOSTests.release.xcconfig */,
+				CE49DF11C4A47D646AD7399C /* Pods-BiolabTests.debug.xcconfig */,
+				2498EC88792B2CCCFCBF29DE /* Pods-BiolabTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -696,10 +696,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* weedmatch */ = {
+		13B07FAE1A68108700A75B9A /* Biolab */ = {
 			isa = PBXGroup;
 			children = (
-				24FE648B20ADDC5100684A1D /* weedmatch.entitlements */,
+				24FE648B20ADDC5100684A1D /* Biolab.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -709,7 +709,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = weedmatch;
+			name = Biolab;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -795,9 +795,9 @@
 				240837F120A8F38600FBC63E /* QBImagePicker.framework */,
 				240837F220A8F38600FBC63E /* RSKImageCropper.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				F6D9B33A286D5F8141C3CC22 /* libPods-weedmatch.a */,
-				FF7391E453D18CA55E44964C /* libPods-weedmatch-tvOSTests.a */,
-				4DACD42FF98D2CA9BF18B867 /* libPods-weedmatchTests.a */,
+				F6D9B33A286D5F8141C3CC22 /* libPods-Biolab.a */,
+				FF7391E453D18CA55E44964C /* libPods-Biolab-tvOSTests.a */,
+				4DACD42FF98D2CA9BF18B867 /* libPods-BiolabTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -916,9 +916,9 @@
 			children = (
 				248D164920A3FA5000B5791C /* QBImagePicker.framework */,
 				248D164620A3FA5000B5791C /* RSKImageCropper.framework */,
-				13B07FAE1A68108700A75B9A /* weedmatch */,
+				13B07FAE1A68108700A75B9A /* Biolab */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* weedmatchTests */,
+				00E356EF1AD99517003FC87E /* BiolabTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				45748C78675B455998F6DD7E /* Resources */,
@@ -933,10 +933,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* weedmatch.app */,
-				00E356EE1AD99517003FC87E /* weedmatchTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* weedmatch-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* weedmatch-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Biolab.app */,
+				00E356EE1AD99517003FC87E /* BiolabTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Biolab-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Biolab-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -962,9 +962,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* weedmatchTests */ = {
+		00E356ED1AD99517003FC87E /* BiolabTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "weedmatchTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BiolabTests" */;
 			buildPhases = (
 				97AAC49D2E575F74F4BB6642 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -976,14 +976,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = weedmatchTests;
-			productName = weedmatchTests;
-			productReference = 00E356EE1AD99517003FC87E /* weedmatchTests.xctest */;
+			name = BiolabTests;
+			productName = BiolabTests;
+			productReference = 00E356EE1AD99517003FC87E /* BiolabTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* weedmatch */ = {
+		13B07F861A680F5B00A75B9A /* Biolab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "weedmatch" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Biolab" */;
 			buildPhases = (
 				A01781E7FFDBFFD0F8E1E4A5 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -996,14 +996,14 @@
 			);
 			dependencies = (
 			);
-			name = weedmatch;
+			name = Biolab;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* weedmatch.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Biolab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* weedmatch-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Biolab-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "weedmatch-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Biolab-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -1014,14 +1014,14 @@
 			);
 			dependencies = (
 			);
-			name = "weedmatch-tvOS";
-			productName = "weedmatch-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* weedmatch-tvOS.app */;
+			name = "Biolab-tvOS";
+			productName = "Biolab-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Biolab-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* weedmatch-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Biolab-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "weedmatch-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Biolab-tvOSTests" */;
 			buildPhases = (
 				9C1A1D1E4360643413E0CEE2 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -1034,9 +1034,9 @@
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 				2434CF11204EE3FD00A28E74 /* PBXTargetDependency */,
 			);
-			name = "weedmatch-tvOSTests";
-			productName = "weedmatch-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* weedmatch-tvOSTests.xctest */;
+			name = "Biolab-tvOSTests";
+			productName = "Biolab-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Biolab-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1076,7 +1076,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "weedmatch" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Biolab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1175,10 +1175,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* weedmatch */,
-				00E356ED1AD99517003FC87E /* weedmatchTests */,
-				2D02E47A1E0B4A5D006451C7 /* weedmatch-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* weedmatch-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Biolab */,
+				00E356ED1AD99517003FC87E /* BiolabTests */,
+				2D02E47A1E0B4A5D006451C7 /* Biolab-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Biolab-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1615,7 +1615,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-weedmatchTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BiolabTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1633,7 +1633,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-weedmatch-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Biolab-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1651,7 +1651,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-weedmatch-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Biolab-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1665,7 +1665,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* weedmatchTests.m in Sources */,
+				00E356F31AD99517003FC87E /* BiolabTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1691,7 +1691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* weedmatchTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* BiolabTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1700,17 +1700,17 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* weedmatch */;
+			target = 13B07F861A680F5B00A75B9A /* Biolab */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2434CF11204EE3FD00A28E74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* weedmatch */;
+			target = 13B07F861A680F5B00A75B9A /* Biolab */;
 			targetProxy = 2434CF10204EE3FD00A28E74 /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* weedmatch-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Biolab-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1722,7 +1722,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = weedmatch;
+			path = Biolab;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1730,7 +1730,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE49DF11C4A47D646AD7399C /* Pods-weedmatchTests.debug.xcconfig */;
+			baseConfigurationReference = CE49DF11C4A47D646AD7399C /* Pods-BiolabTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = W2U7ETVQ2D;
@@ -1753,7 +1753,7 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = weedmatchTests/Info.plist;
+				INFOPLIST_FILE = BiolabTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1777,13 +1777,13 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weedmatch.app/weedmatch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biolab.app/Biolab";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2498EC88792B2CCCFCBF29DE /* Pods-weedmatchTests.release.xcconfig */;
+			baseConfigurationReference = 2498EC88792B2CCCFCBF29DE /* Pods-BiolabTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1803,7 +1803,7 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = weedmatchTests/Info.plist;
+				INFOPLIST_FILE = BiolabTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1827,16 +1827,16 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weedmatch.app/weedmatch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biolab.app/Biolab";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F462E79F5FE153727C0A912 /* Pods-weedmatch.debug.xcconfig */;
+			baseConfigurationReference = 5F462E79F5FE153727C0A912 /* Pods-Biolab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = weedmatch/weedmatch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Biolab/Biolab.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1856,7 +1856,7 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = weedmatch/Info.plist;
+				INFOPLIST_FILE = Biolab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1864,17 +1864,17 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.paco.biolab;
-				PRODUCT_NAME = weedmatch;
+				PRODUCT_NAME = Biolab;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8E366C6E20C9E97CCC1FC36 /* Pods-weedmatch.release.xcconfig */;
+			baseConfigurationReference = A8E366C6E20C9E97CCC1FC36 /* Pods-Biolab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = weedmatch/weedmatch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Biolab/Biolab.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2U7ETVQ2D;
@@ -1893,7 +1893,7 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = weedmatch/Info.plist;
+				INFOPLIST_FILE = Biolab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1901,7 +1901,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.paco.biolab;
-				PRODUCT_NAME = weedmatch;
+				PRODUCT_NAME = Biolab;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1933,7 +1933,7 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "weedmatch-tvOS/Info.plist";
+				INFOPLIST_FILE = "Biolab-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1955,7 +1955,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.weedmatch-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Biolab-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1990,7 +1990,7 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "weedmatch-tvOS/Info.plist";
+				INFOPLIST_FILE = "Biolab-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2012,7 +2012,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.weedmatch-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Biolab-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -2022,7 +2022,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE3105422CE6921EF117F961 /* Pods-weedmatch-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = EE3105422CE6921EF117F961 /* Pods-Biolab-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2033,7 +2033,7 @@
 				DEVELOPMENT_TEAM = W2U7ETVQ2D;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "weedmatch-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Biolab-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2051,17 +2051,17 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.weedmatch-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Biolab-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weedmatch.app/weedmatch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biolab.app/Biolab";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5B2059F3BEC35B31E90A1B0 /* Pods-weedmatch-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = D5B2059F3BEC35B31E90A1B0 /* Pods-Biolab-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2072,7 +2072,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = W2U7ETVQ2D;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "weedmatch-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Biolab-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2090,10 +2090,10 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.weedmatch-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Biolab-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weedmatch.app/weedmatch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biolab.app/Biolab";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -2177,7 +2177,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "weedmatchTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BiolabTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -2186,7 +2186,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "weedmatch" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Biolab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -2195,7 +2195,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "weedmatch-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Biolab-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -2204,7 +2204,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "weedmatch-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Biolab-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -2213,7 +2213,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "weedmatch" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Biolab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

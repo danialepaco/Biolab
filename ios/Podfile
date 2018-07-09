@@ -1,21 +1,21 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
-target 'weedmatch' do
+target 'Biolab' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
 
 
-  # Pods for weedmatch
+  # Pods for Biolab
 
-  target 'weedmatch-tvOSTests' do
+  target 'Biolab-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'weedmatchTests' do
+  target 'BiolabTests' do
     inherit! :search_paths
     # Pods for testing
   end
