@@ -61,6 +61,7 @@
     "edit": "Edit profile",
     "login": "Log In",
     "recover": "Recover Password",
+    "update": "Update password",
     "internet": "No Internet Connection",
     "password": "Change password",
     "pro": "Buy pro version",
@@ -80,7 +81,9 @@
     "send": "Send",
     "code": "Code",
     "password": "Password",
-    "confirmPassword": "Confirm Password"
+    "confirmPassword": "Confirm Password",
+    "old": "Old password",
+    "equal": "The passwords must be equal"
   },
   "swiper": {
     "searching": "Looking for people near you"

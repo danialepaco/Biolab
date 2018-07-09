@@ -120,7 +120,7 @@ function saveProfile(token, id, state) {
 
     const value = {
         "last_name": state.username,
-        "first_name": state.first_name,
+        "first_name": state.name,
         "address": state.description,
     }
 

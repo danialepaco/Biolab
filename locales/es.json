@@ -61,6 +61,7 @@
     "edit": "Editar perfil",
     "login": "Iniciar Sesión",
     "recover": "Recuperar Contraseña",
+    "update": "Cambiar contraseña",
     "internet": "No hay conexión a Internet",
     "password": "Cambiar contraseña",
     "pro": "Comprar version pro",
@@ -79,8 +80,10 @@
   "forgot": {
     "send": "Enviar",
     "code": "Codigo",
-    "password": "Password",
-    "confirmPassword": "Confirmar Password"
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "old": "Contraseña vieja",
+    "equal": "Las contraseñas deben ser iguales"
   },
   "swiper": {
     "searching": "Buscando personas cerca de tí"

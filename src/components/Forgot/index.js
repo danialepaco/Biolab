@@ -90,21 +90,25 @@ class ForgotPage extends ValidationComponent {
             password: {required: true, minlength:6, maxlength:12},
             confirmPassword: {required: true, minlength:6, maxlength:12}
         });
-        if(this.isFormValid()){
-            this.setState({isLoading: true});
-            recoveryPassword(this.state.code, this.state.password);
-        }else{
-            if(this.isFieldInError('code')){
-                this.getErrorsInField('code').map((result) => toastMsg(result))
-                return
-            }
-            if(this.isFieldInError('password')){
-                this.getErrorsInField('password').map((result) => toastMsg(result))
-                return
-            }
-            if(this.isFieldInError('confirmPassword')){
-                this.getErrorsInField('confirmPassword').map((result) => toastMsg(result))
-                return
+        if (this.state.password != this.state.confirmPassword) {
+            toastMsg(strings('forgot.equal'))
+        } else {
+            if(this.isFormValid()){
+                this.setState({isLoading: true});
+                recoveryPassword(this.state.code, this.state.password);
+            }else{
+                if(this.isFieldInError('code')){
+                    this.getErrorsInField('code').map((result) => toastMsg(result))
+                    return
+                }
+                if(this.isFieldInError('password')){
+                    this.getErrorsInField('password').map((result) => toastMsg(result))
+                    return
+                }
+                if(this.isFieldInError('confirmPassword')){
+                    this.getErrorsInField('confirmPassword').map((result) => toastMsg(result))
+                    return
+                }
             }
         }
     }

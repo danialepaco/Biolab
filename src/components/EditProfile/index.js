@@ -42,6 +42,18 @@ export default class EditProfile extends Component {
   componentDidMount(){
     this.props.navigation.setParams({logout: () => this._logout()});
 
+    this.event = APP_STORE.APP_EVENT.subscribe(state => {
+      this.setState({isLoading: true});
+      console.log(state);
+      if (state.error) {
+        Alert.alert(state.error);
+          return;
+      }
+      if (state.success) {
+        this.props.navigation.navigate('Auth');
+        return;
+      }
+    });
     this.public = APP_STORE.PUBLICEDITPROFILE_EVENT.subscribe(state => {
         console.log("Public Edit Profile:componentDidMount:PUBLICEDITPROFILE_EVENT", state);
         console.log(state);
@@ -76,19 +88,6 @@ export default class EditProfile extends Component {
       }
     });
 
-    this.event = APP_STORE.APP_EVENT.subscribe(state => {
-      this.setState({isLoading: true});
-      console.log(state);
-      if (state.error) {
-        Alert.alert(state.error);
-          return;
-      }
-      if (state.success) {
-        this.props.navigation.navigate('Auth');
-        return;
-      }
-  });
-
     this._getProfileId();
 
   }
@@ -97,7 +96,7 @@ export default class EditProfile extends Component {
       console.log("EditProfile:componentWillUmmount");
       this.public.unsubscribe();
       this.saveProfile.unsubscribe();
-
+      this.event.unsubscribe();
   }
 
   _getProfileId() {
@@ -106,6 +105,18 @@ export default class EditProfile extends Component {
 
   _saveInfo() {
     if (checkConectivity()) {
+      this.event = APP_STORE.APP_EVENT.subscribe(state => {
+        this.setState({isLoading: true});
+        console.log(state);
+        if (state.error) {
+          Alert.alert(state.error);
+            return;
+        }
+        if (state.success) {
+          this.props.navigation.navigate('Auth');
+          return;
+        }
+    });
       this.setState({isLoading: false });
       saveProfileAction(APP_STORE.getToken(), this.state)
     } else {
@@ -125,6 +136,11 @@ export default class EditProfile extends Component {
   _logout = () => {
     this.setState({isLoading: false});
     logOut();      
+  }
+
+  showUpdate() {
+    this.event.unsubscribe()
+    this.props.navigation.navigate('Update')
   }
 
   render() {
@@ -187,7 +203,7 @@ export default class EditProfile extends Component {
               <Text style={styles.buttonText}>{strings("main.changes")}</Text>
           </TouchableOpacity>
           <TouchableOpacity
-              style={styles.buttomPassStyle}>
+              style={styles.buttomPassStyle} onPress={() => this.showUpdate()}>
               <Text style={styles.buttonTextCard}>{strings("main.password")}</Text>
           </TouchableOpacity>
         </View>
