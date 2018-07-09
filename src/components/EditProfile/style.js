@@ -87,13 +87,13 @@ export default styles = StyleSheet.create({
       width: '100%',
       paddingTop: 10,
       paddingBottom: 10,
-      borderColor: '#9605CC',
+      borderColor: '#3BBDA6',
       borderRadius: 50,
       borderWidth: 1,
       alignItems: 'center',
   },
   buttonTextOn: {
-      color: '#9605CC',
+      color: '#3BBDA6',
       fontSize: 16,
   },
   buttomRegisterStyle: {
@@ -105,14 +105,14 @@ export default styles = StyleSheet.create({
       paddingBottom: 10,
       borderRadius: 50,
       alignItems: 'center',
-      backgroundColor: '#9605CC',
+      backgroundColor: '#3BBDA6',
   },
   buttonText: {
       color: '#ffffff',
       fontSize: 16,
   },
   buttonTextCard: {
-      color: '#9605CC',
+      color: '#3BBDA6',
       fontSize: 16,
   },
   buttomCardStyle: {
@@ -306,5 +306,12 @@ export default styles = StyleSheet.create({
     width: '100%',
     marginRight:50,
     alignItems: 'center',
-  }
+  },
+  navRight: {
+    height:18,
+    width:18
+},
+buttonRight: {
+    marginRight: 18
+}
 });

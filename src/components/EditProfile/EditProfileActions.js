@@ -1,14 +1,14 @@
 import {APP_STORE} from '../../Store';
 import {strings} from '../../i18n';
-import {isValidText} from '../../utils/index'
+import {AsyncStorage } from 'react-native';
 import {userService} from './service';
 
-function publicEditAction(token, id) {
-    console.log(`publicEditProfileAction: ${token}, ${id}`);
+function publicEditAction(token) {
+    console.log(`publicEditProfileAction: ${token}`);
 
-    userService.publicProfile(token, id)
+    userService.publicProfile(token)
         .then(async (response) => {
-            console.log(`publicEditProfileAction: ${token}, ${id}`, response);
+            console.log(`publicEditProfileAction: ${token}`, response);
             const json = await response.json();
             console.log(`publicEditProfileAction:JSON:`, json);
             if (response.ok) {
@@ -19,60 +19,12 @@ function publicEditAction(token, id) {
         });
 }
 
-function postImageAction(image) {
-    console.log(`postImageAction`);
+function saveProfileAction(token, state) {
+    console.log(`saveProfile: ${token}, ${state}`);
 
-    userService.uploadImage(APP_STORE.getToken(),APP_STORE.getId(), image)
+    userService.saveProfile(token, state.id, state)
         .then(async (response) => {
-            console.log('postImageAction', response);
-            const json = await response.json();
-            console.log(`postImageAction:JSON:`, json);
-            if (response.ok) {
-                APP_STORE.PUBLICEDITPROFILE_EVENT.next({"publicEditProfile": json});
-                return;
-            }
-            APP_STORE.APP_EVENT.next({"error": json.detail});
-        });
-}
-
-function putImageAction(image,id) {
-    console.log(`putImageAction`);
-
-    userService.changeImage(APP_STORE.getToken(),APP_STORE.getId(), image,id)
-        .then(async (response) => {
-            console.log('putImageAction', response);
-            const json = await response.json();
-            console.log(`putImageAction:JSON:`, json);
-            if (response.ok) {
-                APP_STORE.PUBLICEDITPROFILE_EVENT.next({"publicEditProfile": json});
-                return;
-            }
-            APP_STORE.APP_EVENT.next({"error": json.detail});
-        });
-}
-
-function deleteImageAction(image) {
-    console.log(`deleteImageAction`);
-
-    userService.deleteImage(APP_STORE.getToken(),APP_STORE.getId(), image)
-        .then(async (response) => {
-            console.log('deleteImageAction', response);
-            const json = await response.json();
-            console.log(`deleteImageAction:JSON:`, json);
-            if (response.ok) {
-                APP_STORE.PUBLICEDITPROFILE_EVENT.next({"publicEditProfile": json});
-                return;
-            }
-            APP_STORE.APP_EVENT.next({"error": json.detail});
-        });
-}
-
-function saveProfileAction(token, id, state) {
-    console.log(`saveProfile: ${token}, ${id}, ${state}`);
-
-    userService.saveProfile(token, id, state)
-        .then(async (response) => {
-            console.log(`publicSaveProfileAction: ${token}, ${id}, ${state}`, response);
+            console.log(`publicSaveProfileAction: ${token}, ${state}`, response);
             const json = await response.json();
             console.log(`publicSaveProfileAction:JSON:`, json);
             if (response.ok) {
@@ -83,4 +35,18 @@ function saveProfileAction(token, id, state) {
         });
 }
 
-export {publicEditAction, saveProfileAction,putImageAction,postImageAction,deleteImageAction};
+function logOut() {
+    console.log(`logOut`);
+    userService.logOut(APP_STORE.getToken())
+    .then(async (response) => {
+        const json = await response.json();
+        if (response.ok) {
+            AsyncStorage.removeItem('token');
+            APP_STORE.APP_EVENT.next({"success": json});
+            return;
+        }
+        APP_STORE.APP_EVENT.next({"error": json});
+    });
+}
+
+export {publicEditAction, saveProfileAction,logOut};

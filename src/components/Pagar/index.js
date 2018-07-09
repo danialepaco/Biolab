@@ -31,8 +31,6 @@ class Pagar extends Component {
             price: '',
             image: '',
             isLoading: false,
-
-            
             selected1: 0,
             results: []
         };
@@ -51,7 +49,6 @@ class Pagar extends Component {
     componentDidMount() {
         console.log("RegisterPage:componentDidMount");
         this.getBanks()
-
         this.setState({price:this.getPrice()})
     }
 

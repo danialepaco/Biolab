@@ -19,14 +19,10 @@ import {
 } from 'react-native';
 
 import { strings } from "../../i18n";
-import { StackNavigator } from 'react-navigation';
-import MultiSlider from '@ptomasroos/react-native-multi-slider';
 import styles from './style';
-import ImagePicker from 'react-native-image-crop-picker';
-import ActionSheet from 'react-native-actionsheet';
 import {APP_STORE} from '../../Store';
 import { internet, checkConectivity } from '../../utils';
-import { publicEditAction, saveProfileAction,putImageAction,postImageAction,deleteImageAction } from './EditProfileActions';
+import { publicEditAction, saveProfileAction,logOut } from './EditProfileActions';
 
 export default class EditProfile extends Component {
 
@@ -36,35 +32,27 @@ export default class EditProfile extends Component {
 
     this.state = {
       isLoading: false,
-      sliderOneChanging: false,
-      sliderOneValue: [0],
-      index: 0,
-      user: {},
-      images:{},
+      id: '',
       username: '',
       description: '',
       name: '',
-      notification: true
     };
   }
 
   componentDidMount(){
+    this.props.navigation.setParams({logout: () => this._logout()});
 
     this.public = APP_STORE.PUBLICEDITPROFILE_EVENT.subscribe(state => {
         console.log("Public Edit Profile:componentDidMount:PUBLICEDITPROFILE_EVENT", state);
         console.log(state);
         if (state.publicEditProfile) {
-        let newValues = [0];
-        newValues[0] = state.publicEditProfile.distance;
+
           this.setState({
               isLoading: true,
-              user: state.publicEditProfile,
-              sliderOneValue: newValues,
-              username: state.publicEditProfile.username,
-              description: state.publicEditProfile.description,
+              username: state.publicEditProfile.last_name,
+              description: state.publicEditProfile.address,
               name: state.publicEditProfile.first_name,
-              images: state.publicEditProfile.profile_images,
-              notification: state.publicEditProfile.notification
+              id: state.publicEditProfile.id.toString()
           })
           return;
         }
@@ -95,6 +83,10 @@ export default class EditProfile extends Component {
         Alert.alert(state.error);
           return;
       }
+      if (state.success) {
+        this.props.navigation.navigate('Auth');
+        return;
+      }
   });
 
     this._getProfileId();
@@ -109,187 +101,34 @@ export default class EditProfile extends Component {
   }
 
   _getProfileId() {
-      publicEditAction(APP_STORE.getToken(), APP_STORE.getId())
-  }
-
-  sliderOneValuesChangeStart = () => {
-    this.setState({
-      sliderOneChanging: true,
-    });
-  }
-
-  sliderOneValuesChange = (values) => {
-    console.log(values);
-    let newValues = [0];
-    newValues[0] = values[0];
-    this.setState({
-      sliderOneValue: newValues,
-    });
-  }
-
-  sliderOneValuesChangeFinish = () => {
-    this.setState({
-      sliderOneChanging: false,
-    });
-  }
-
-  handleImage(index) {
-    this.setState({
-      index: index
-    },() => {
-      this.ActionSheet.show()
-    })
-  }
-
-    setImageUrl(image,index) {
-
-      if(this.state.user.profile_images.length >= index + 1) {
-        //put
-        var newArr = this.state.images
-        newArr[index].image = image
-        this.setState({
-          images: newArr
-        },() => {
-          this.setState({isLoading: false });
-          putImageAction(image,this.state.images[index].id)
-        })
-      } else {
-        //post
-        this.setState({isLoading: false });
-        postImageAction(image)
-      }
-    }
-
-    deleteImage(index) {
-      this.setState({isLoading: false });
-      deleteImageAction(this.state.images[index].id)
-    }
-
-    showActivity() {
-        return (
-          <View>
-            <ActionSheet
-              ref={o => this.ActionSheet = o}
-              title={strings("home.actionSheet")}
-              options={[
-                strings("home.camera"),
-                strings("home.biblio"),
-                strings("home.cancel"),
-              ]}
-              cancelButtonIndex={2}
-              onPress={(index) => {
-
-                switch(index) {
-                  case 0:
-                    this._takePhoto(this.state.index);
-                    break;
-                  case 1:
-                    this._getPhoto(this.state.index);
-                    break;
-                  default:
-                    break;
-                }
-               }}
-            />
-          </View>
-        );
-    }
-
-  _getPhoto(index) {
-      ImagePicker.openPicker({
-        cropping: false,
-        width: 500,
-        height: 500,
-        compressImageQuality: 0.5,
-        includeExif: true,
-        }).then(image => {
-          this.setImageUrl(image.path,index)
-      }).catch(e => alert(e));
-  }
-
-  _takePhoto(index) {
-      ImagePicker.openCamera({
-        cropping: false,
-        width: 500,
-        height: 500,
-        compressImageQuality: 0.5,
-        includeExif: true,
-        }).then(image => {
-          this.setImageUrl(image.path,index)
-      }).catch(e => alert(e));
-  }
-
-  _setGenero(value) {
-      this.setState(prevState => ({
-          user: {
-            ...prevState.user,
-            genero: value,
-            sex: value
-          }
-      }));
-  }
-
-  _setMatch(value) {
-      console.log(value)
-      this.setState(prevState => ({
-          user: {
-              ...prevState.user,
-              match_sex: value
-          }
-      }));
+      publicEditAction(APP_STORE.getToken())
   }
 
   _saveInfo() {
     if (checkConectivity()) {
       this.setState({isLoading: false });
-      saveProfileAction(APP_STORE.getToken(), APP_STORE.getId(), this.state)
+      saveProfileAction(APP_STORE.getToken(), this.state)
     } else {
       internet();
     }
   }
 
-  setPhoto(index){
+  static navigationOptions = ({ navigation }) => {
+    const {params} = navigation.state;
 
-    if(index == 0) {
-      return (
-        <Image style={styles.mePic} source={{uri: this.state.user.profile_images[index].image}} />
-      );
-      return;
-    }
+    return {
+      title: strings('main.edit'),
+      headerRight: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/logout.png')} /></TouchableOpacity>
+    };
+  };
 
-    if(this.state.images.length >= index + 1) {
-      return (
-        <Image style={styles.meSubImg} source={{uri: this.state.images[index].image}} />
-      )
-    } else {
-      return (
-        <Image source={require('../../assets/img/image_cover.png')} style={styles.meSubImgSin}/>
-      )
-    }
+  _logout = () => {
+    this.setState({isLoading: false});
+    logOut();      
   }
-
-  notificationes() {
-    this.setState({
-      notification: !this.state.notification
-    });
-  }
-
-  setButton(index){
-
-    if(this.state.images.length >= index + 1) {
-
-      return (
-        <TouchableOpacity style={styles.buttomDelete} onPress={() => this.deleteImage(index)}>
-          <Image source={require('../../assets/img/delete.png')} style={styles.imageMode} />
-        </TouchableOpacity>
-      )
-    }
-  }
-
-  static navigationOptions = { title: 'Editar Perfil' };
 
   render() {
-    const { image, user, isLoading } = this.state;
+    const { isLoading } = this.state;
 
     if(isLoading) {
       return (
@@ -298,42 +137,15 @@ export default class EditProfile extends Component {
           style={styles.scrollView}
           keyboardShouldPersistTaps={'always'}
         >
-        {this.showActivity()}
-        <View style={styles.meInfoWrap}>
-          <TouchableOpacity onPress={() => this.handleImage(0)}>
-          {this.setPhoto(0)}
-          </TouchableOpacity>
-        </View>
-        <View style={styles.contentImg}>
-           <View style={styles.meSubPic}>
-             <TouchableOpacity onPress={() => this.handleImage(1)} style={styles.buttomUploadStyle}>
-              {this.setPhoto(1)}
-             </TouchableOpacity>
-              {this.setButton(1)}
-           </View>
-           <View style={styles.meSubPic}>
-             <TouchableOpacity onPress={() => this.handleImage(2)} style={styles.buttomUploadStyle}>
-              {this.setPhoto(2)}
-             </TouchableOpacity>
-             {this.setButton(2)}
-           </View>
-           <View style={styles.meSubPic}>
-             <TouchableOpacity onPress={() => this.handleImage(3)} style={styles.buttomUploadStyle}>
-              {this.setPhoto(3)}
-             </TouchableOpacity>
-             {this.setButton(3)}
-
-           </View>
-         </View>
          <View style={styles.contentForm}>
            <View style={styles.labelText}>
-             <Text style={styles.textLabel}>{strings("register.about")}</Text>
+             <Text style={styles.textLabel}>{strings("register.name")}</Text>
            </View>
            <TextInput
               underlineColorAndroid='transparent'
               style={styles.meDescription}
-              value={this.state.description}
-              onChangeText={(description) => this.setState({description})}
+              value={this.state.name}
+              onChangeText={(name) => this.setState({name})}
               blurOnSubmit={false}
               returnKeyType = {"next"}
               ref='descripcion'
@@ -341,13 +153,13 @@ export default class EditProfile extends Component {
             />
           <View style={styles.divider} />
           <View style={styles.labelText}>
-            <Text style={styles.textLabel}>{strings("register.name")}</Text>
+            <Text style={styles.textLabel}>{strings("register.lastName")}</Text>
           </View>
           <TextInput
              underlineColorAndroid='transparent'
              style={styles.meDescription}
-             value={this.state.name}
-             onChangeText={(name) => this.setState({name})}
+             value={this.state.username}
+             onChangeText={(username) => this.setState({username})}
              blurOnSubmit={false}
              returnKeyType = {"next"}
              ref={(input) => { this.nombre = input; }}
@@ -355,108 +167,21 @@ export default class EditProfile extends Component {
            />
          <View style={styles.divider} />
          <View style={styles.labelText}>
-           <Text style={styles.textLabel}>{strings("register.username")}</Text>
+           <Text style={styles.textLabel}>{strings("register.address")}</Text>
          </View>
          <TextInput
             underlineColorAndroid='transparent'
             style={styles.meDescription}
-            value={this.state.username}
-            onChangeText={(username) => this.setState({username})}
+            value={this.state.description}
+            onChangeText={(description) => this.setState({description})}
             blurOnSubmit={false}
             returnKeyType = {"next"}
             ref={(input) => { this.usuario = input; }}
             onSubmitEditing={() => { Keyboard.dismiss() }}
           />
           <View style={styles.divider} />
-          <View style={styles.labelText}>
-            <Text style={styles.textLabel}>{strings("register.distance")}</Text>
-            <Text style={styles.textLabelvalue}>{this.state.sliderOneValue + 'Km'}</Text>
-          </View>
-          <View style={styles.marginView}>
-            <MultiSlider
-              selectedStyle={{
-                backgroundColor: '#9605CC',
-              }}
-              min={2}
-              max={201}
-              unselectedStyle={{
-                backgroundColor: '#ccc',
-              }}
-              values={this.state.sliderOneValue}
-              sliderLength={300}
-              onValuesChangeStart={this.sliderOneValuesChangeStart}
-              onValuesChange={this.sliderOneValuesChange}
-              onValuesChangeFinish={this.sliderOneValuesChangeFinish}
-            />
-          </View>
-          <View style={styles.divider} />
-            <View style={styles.labelText}>
-              <Text style={styles.textLabelSwitch}>{strings("register.silence")}</Text>
-              <View style={styles.viewSwitch}>
-              <Switch
-                style={styles.switchStyle}
-                onTintColor={"#9605CC"}
-                value={this.state.notification}
-                onValueChange={() => this.notificationes()}
-              />
-              </View>
-            </View>
-          <View style={styles.divider} />
          </View>
-         <View style={styles.labelTextGender}>
-           <Text style={styles.textLabel}>Match</Text>
-         </View>
-         <View style={styles.contentFormGender}>
-           <View style={styles.contenGender}>
-             <TouchableOpacity style={this.state.user.match_sex === 'Hombre' ? styles.buttomEditSexOn : styles.buttomEditSexOff } onPress={() => this._setMatch('Hombre') }>
-               <Text style={this.state.user.match_sex === 'Hombre' ? styles.buttonTextOn : styles.buttonTextOff}>Hombre</Text>
-             </TouchableOpacity>
-           </View>
-           <View style={styles.contenGender}>
-             <TouchableOpacity style={this.state.user.match_sex === 'Mujer' ? styles.buttomEditSexOn : styles.buttomEditSexOff } onPress={() => this._setMatch('Mujer') }>
-               <Text style={this.state.user.match_sex === 'Mujer' ? styles.buttonTextOn : styles.buttonTextOff}>Mujer</Text>
-             </TouchableOpacity>
-
-           </View>
-           <View style={styles.contenGender}>
-             <TouchableOpacity style={this.state.user.match_sex === 'Otro' ? styles.buttomEditSexOn : styles.buttomEditSexOff } onPress={() => this._setMatch('Otro') }>
-               <Text style={this.state.user.match_sex === 'Otro' ? styles.buttonTextOn : styles.buttonTextOff}>Otro</Text>
-             </TouchableOpacity>
-           </View>
-         </View>
-         <View style={styles.divider} />
-
-         <View style={styles.labelTextGender}>
-           <Text style={styles.textLabel}>{strings("register.ownGen")}</Text>
-         </View>
-         <View style={styles.contentFormGender}>
-           <View style={styles.contenGender}>
-             <TouchableOpacity style={this.state.user.sex === 'Hombre' ? styles.buttomEditSexOn : styles.buttomEditSexOff } onPress={() => this._setGenero('Hombre') }>
-               <Text style={this.state.user.sex === 'Hombre' ? styles.buttonTextOn : styles.buttonTextOff}>Hombre</Text>
-             </TouchableOpacity>
-           </View>
-           <View style={styles.contenGender}>
-             <TouchableOpacity style={this.state.user.sex === 'Mujer' ? styles.buttomEditSexOn : styles.buttomEditSexOff } onPress={() => this._setGenero('Mujer') }>
-               <Text style={this.state.user.sex === 'Mujer' ? styles.buttonTextOn : styles.buttonTextOff}>Mujer</Text>
-             </TouchableOpacity>
-           </View>
-           <View style={styles.contenGender}>
-             <TouchableOpacity style={this.state.user.sex === 'Otro' ? styles.buttomEditSexOn : styles.buttomEditSexOff } onPress={() => this._setGenero('Otro') }>
-               <Text style={this.state.user.sex === 'Otro' ? styles.buttonTextOn : styles.buttonTextOff}>Otro</Text>
-             </TouchableOpacity>
-           </View>
-         </View>
-         <View style={styles.divider} />
-
-         <View style={styles.labelTextComprar}>
-           <Text style={styles.textLabelCard}>{strings("main.pro")}</Text>
-           <TouchableOpacity
-               style={styles.buttomCardStyle}>
-               <Text style={styles.buttonTextCard}>{strings("main.pay")}</Text>
-           </TouchableOpacity>
-         </View>
-        <View style={styles.divider} />
-      <View style={styles.content}>
+        <View style={styles.content}>
           <TouchableOpacity
               style={styles.buttomRegisterStyle} onPress={() => this._saveInfo()}>
               <Text style={styles.buttonText}>{strings("main.changes")}</Text>
@@ -471,7 +196,7 @@ export default class EditProfile extends Component {
     } else {
         return (
             <View style={[styles.containers, styles.horizontal]}>
-                <ActivityIndicator size="large" color="#9605CC" />
+                <ActivityIndicator size="large" color="#3BBDA6" />
             </View>
         )
     }

@@ -13,7 +13,8 @@ export const userService = {
     saveProfile,
     changeImage,
     deleteImage,
-    uploadImage
+    uploadImage,
+    logOut
 };
 
 /**
@@ -22,13 +23,22 @@ export const userService = {
  * @param id The id of the user
  * @returns {Promise<any>}
  */
-function publicProfile(token, id) {
+function publicProfile(token) {
     const requestOptions = {
         method: 'GET',
         headers: authHeader(token)
     };
 
-    return fetch(URL + 'profile/' + id + '/', requestOptions);
+    return fetch(URL + 'accounts/me/', requestOptions);
+}
+
+function logOut(token) {
+    const requestOptions = {
+        method: 'DELETE',
+        headers: authHeader(token)
+    };
+
+    return fetch(URL + 'logout/', requestOptions);
 }
 
 /**
@@ -109,24 +119,16 @@ function deleteImage(token,id, image) {
 function saveProfile(token, id, state) {
 
     const value = {
-        "username": state.user.username,
-        "first_name": state.user.first_name,
-        "description": state.user.description,
-        "match_sex": state.user.match_sex,
-        "sex": state.user.sex,
-        "distance": state.sliderOneValue.toString(),
-        "notification": state.notification ? "true" : "false"
+        "last_name": state.username,
+        "first_name": state.first_name,
+        "address": state.description,
     }
 
     const requestOptions = {
         method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept-Language': LENGUAGE,
-            'Authorization': 'Token ' + token,
-        },
+        headers: authHeader(token),
         body: JSON.stringify(value)
     };
 
-    return fetch(URL + 'profile/' + id + '/', requestOptions);
+    return fetch(URL + 'accounts/' + id + '/', requestOptions);
 }

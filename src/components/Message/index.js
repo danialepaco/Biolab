@@ -65,7 +65,7 @@ export default class Message extends Component {
     }
 
     _logout = () => {
-      this.props.navigation.navigate('Profile');
+      this.props.navigation.navigate('EditProfile');
     }
 
     componentWillUnmount() {
