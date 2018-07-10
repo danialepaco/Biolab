@@ -66,7 +66,9 @@ export default class Message extends Component {
     }
 
     showPdf(id) {
-      this.props.navigation.navigate('EditProfile');
+      this.props.navigation.navigate('PDF', {
+        id: id,
+      });    
     }
 
     componentWillUnmount() {
@@ -105,12 +107,6 @@ export default class Message extends Component {
                     </View>
                   </View>
                 </TouchableOpacity>
-              }
-              refreshControl={
-                <RefreshControl
-                  refreshing={this.state.refreshing}
-                  onRefresh={this.onRefresh.bind(this)}
-                />
               }
             />
           </View>

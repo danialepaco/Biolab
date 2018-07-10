@@ -43,6 +43,8 @@ export default class Message extends Component {
 
     componentDidMount() {
 
+      this.props.navigation.setParams({logout: () => this._logout()});
+
       this.chatsVar = APP_STORE.CHAT_EVENT.subscribe(state => {
         console.log("Messages:componentDidMount:chatsVar", state);
         if (state.chats) {

@@ -14,7 +14,6 @@ export const userService = {
     changeImage,
     deleteImage,
     uploadImage,
-    logOut
 };
 
 /**
@@ -30,15 +29,6 @@ function publicProfile(token) {
     };
 
     return fetch(URL + 'accounts/me/', requestOptions);
-}
-
-function logOut(token) {
-    const requestOptions = {
-        method: 'DELETE',
-        headers: authHeader(token)
-    };
-
-    return fetch(URL + 'logout/', requestOptions);
 }
 
 /**

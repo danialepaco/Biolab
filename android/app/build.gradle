@@ -168,6 +168,8 @@ subprojects {
 }
 
 dependencies {
+    compile project(':react-native-pdf')
+    compile project(':react-native-fetch-blob')
     implementation project(':react-native-firebase')
     implementation "com.google.android.gms:play-services-base:15.0.0"
     implementation "com.google.firebase:firebase-core:15.0.2"

@@ -66,10 +66,6 @@ function appendData(oldData, newData) {
     return oldData;
 }
 
-function logOut() {
-    console.log(`logOut`);
-}
-
 function getImages(data) {
 
     const _images = [];
@@ -81,4 +77,4 @@ function getImages(data) {
     return _images;
 }
 
-export { publicProfileAction,getImages,publicImages420Action,appendData,Action420,logOut };
+export { publicProfileAction,getImages,publicImages420Action,appendData,Action420 };

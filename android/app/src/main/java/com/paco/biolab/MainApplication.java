@@ -3,6 +3,9 @@ package com.paco.biolab;
 import android.app.Application;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.facebook.react.ReactApplication;
+import org.wonday.pdf.RCTPdfView;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import org.wonday.pdf.RCTPdfView;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
 import com.toast.RCTToastPackage;
@@ -47,7 +50,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new RCTPdfView(),
+            new RNFetchBlobPackage(),
             new RNFirebasePackage(),
+            new RCTPdfView(),
             new RNFirebaseMessagingPackage(),
             new RCTToastPackage(),
             new RNSpinkitPackage(),

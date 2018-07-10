@@ -13,10 +13,11 @@ import ForgotPage from './src/components/Forgot';
 import Message from './src/components/Message';
 import Update from './src/components/UpdatePassword';
 import Resultados from './src/components/Resultados';
+import PDF from './src/components/PDF';
 import Pagar from './src/components/Pagar';
 import Topbar from './src/utils/TopBar';
 
-const AppStack = StackNavigator({Message:Message,Ver:Ver,Pagar:Pagar,Bar: Topbar, Home: HomePage, Profile: Profile, EditProfile: EditProfile, PublicProfile: PublicProfile,Update:Update,Resultados:Resultados});
+const AppStack = StackNavigator({Message:Message,Ver:Ver,Pagar:Pagar,Bar: Topbar, Home: HomePage, Profile: Profile, EditProfile: EditProfile, PublicProfile: PublicProfile,Update:Update,Resultados:Resultados,PDF:PDF});
 const AuthStack = StackNavigator({SignIn: Authentication, Register: RegisterPage, Terms: Terms, Login: LoginPage, Forgot: ForgotPage});
 
 export default SwitchNavigator(

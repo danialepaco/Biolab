@@ -43,13 +43,10 @@ export default class Profile extends Component {
 
       return {
         title: strings('main.profile'),
-        headerRight: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/logout.png')} /></TouchableOpacity>
       };
     };
 
     componentDidMount(){
-
-      this.props.navigation.setParams({logout: () => this._logout()});
 
       this.appSubscription = APP_STORE.APP_EVENT.subscribe(state => {
         console.log("LoginPage:componentDidMount:appSubscription", state);
@@ -123,11 +120,6 @@ export default class Profile extends Component {
       this.images420Page.unsubscribe();
       this.appSubscription.unsubscribe();
       this.public.unsubscribe();
-    }
-
-    _logout = () => {
-      this.setState({isLoading: false});
-      logOut();      
     }
 
     _publicProfile() {

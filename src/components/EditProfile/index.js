@@ -39,6 +39,15 @@ export default class EditProfile extends Component {
     };
   }
 
+  static navigationOptions = ({ navigation }) => {
+    const {params} = navigation.state;
+
+    return {
+      title: strings('main.edit'),
+      headerRight: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/logout.png')} /></TouchableOpacity>
+    };
+  };
+
   componentDidMount(){
     this.props.navigation.setParams({logout: () => this._logout()});
 
@@ -123,15 +132,6 @@ export default class EditProfile extends Component {
       internet();
     }
   }
-
-  static navigationOptions = ({ navigation }) => {
-    const {params} = navigation.state;
-
-    return {
-      title: strings('main.edit'),
-      headerRight: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/logout.png')} /></TouchableOpacity>
-    };
-  };
 
   _logout = () => {
     this.setState({isLoading: false});
