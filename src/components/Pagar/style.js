@@ -56,16 +56,22 @@ export default styles = StyleSheet.create({
     },
     inputStyle: {
         backgroundColor: '#ffffff',
-        height: 30,
         width: 250,
         borderColor: '#ccc',
         borderRadius: 50,
-        justifyContent: 'center',
-        alignItems: 'center',
         borderWidth: 1,
         paddingLeft: 20,
         paddingRight: 10,
         marginBottom: 10,
+        ...Platform.select({
+            ios: {
+                height: 30,
+            },
+            android: {
+                height: 45,
+                paddingTop: 12,
+            },
+          }),
     },
     inputStyleFecha: {
         backgroundColor: '#ffffff',
@@ -293,5 +299,22 @@ export default styles = StyleSheet.create({
     scrollContainer: {
         backgroundColor: '#FFF',
         flex:1,
-    }
+    },
+        container: {
+        ...Platform.select({
+            ios: {
+                marginTop: -45,                        
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+            },
+            android: {
+                marginTop: 30,                        
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+            },
+          }),
+    },
+    
 })

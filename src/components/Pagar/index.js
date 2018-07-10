@@ -119,8 +119,7 @@ class Pagar extends Component {
     }
 
     getBillID() {
-        this.props.navigation.getParam('bill_id', '0')
-        return val.toString()
+        return this.props.navigation.getParam('bill_id', '0').toString()
     }
 
     getPrice() {
@@ -195,7 +194,7 @@ class Pagar extends Component {
                 width: 100,
                 height: 100,
                 }}
-                source={require('../../assets/img/capture.png')}
+                source={require('../../assets/img/image_cover.png')}
                 />
             )
         } else {
@@ -228,11 +227,7 @@ class Pagar extends Component {
         let body = <ActivityIndicator size="large" color="#3BBDA6"/>;
         if (!isLoading) {
             body = <View>
-                <View style={{marginTop: -45,                        
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}>
+                <View style={styles.container}>
                     <Text style={styles.inputStylesss}>{strings('pay.pay')} {this.state.price} VEF</Text>
                     <TextInput
                         style={styles.inputStyle}
@@ -246,6 +241,7 @@ class Pagar extends Component {
                     />
                     <Picker
                         mode='dropdown'
+                        style={{width: (Platform.OS === 'ios') ? undefined : 280}}
                         selectedValue={this.state.selected1}
                         textStyle={styles.buttonText3}
                         onValueChange={this.onValueChange.bind(this)}>

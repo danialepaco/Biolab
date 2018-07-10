@@ -4,15 +4,12 @@ import {
     TextInput,
     TouchableOpacity,
     View,
-    AsyncStorage,
     Alert,
     ScrollView,
-    StyleSheet,
     Image,
     KeyboardAvoidingView,
     Platform,
     ActivityIndicator,
-    TouchableWithoutFeedback,
 } from 'react-native';
 import { strings } from "../../i18n";
 import { registerAction, createDateData, validateEmail, firebaseAction } from "./RegisterActions";
@@ -21,7 +18,6 @@ import styles from './style';
 import { toastMsg, connection, internet, checkConectivity } from "../../utils";
 import Picker from 'react-native-picker';
 import validate from './validate_wrapper';
-import firebase from 'react-native-firebase';
 
 class RegisterPage extends Component {
 
@@ -160,7 +156,7 @@ class RegisterPage extends Component {
         let body = <ActivityIndicator size="large" color="#3BBDA6"/>;
         if (!isLoading) {
             body = <View>
-                <View style={{marginTop: 0}}>
+                <View style={styles.container}>
                     <View
                     style={{
                         flex: 1,

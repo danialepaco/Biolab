@@ -5,7 +5,8 @@ import {APP_STORE} from "../../Store";
 export const userService = {
     publicProfile,
     publicImages420,
-    tokenFB
+    tokenFB,
+    logOut
 };
 
 /**
@@ -49,4 +50,13 @@ function tokenFB(token) {
         headers: authHeader(APP_STORE.getToken()),
     };
     return fetch(URL + 'device/' + APP_STORE.getIdFB() + '/', requestOptions);
+}
+
+function logOut() {
+    const requestOptions = {
+        method: 'DELETE',
+        headers: authHeader(APP_STORE.getToken())
+    };
+
+    return fetch(URL + 'logout/', requestOptions);
 }
