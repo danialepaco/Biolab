@@ -66,7 +66,8 @@
     "password": "Cambiar contraseña",
     "pro": "Comprar version pro",
     "pay": "Pagar con tarjeta de credito",
-    "changes": "Guardar cambios"
+    "changes": "Guardar cambios",
+    "results": "Resultados"
   },
   "home": {
     "actionSheet": "Elija una opción",

@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 
 import styles from './style';
-import { getChat,calculateTime } from './MessageActions';
+import { getChat } from './MessageActions';
 import {APP_STORE} from '../../Store';
 import {strings} from '../../i18n';
 import {connection, internet, checkConectivity, toastMsg } from '../../utils';
@@ -36,19 +36,22 @@ export default class Message extends Component {
       const {params} = navigation.state;
 
       return {
-        title: strings('main.bill'),
-        headerLeft: <TouchableOpacity style={styles.buttonRight} onPress={() => params.logout && params.logout()}><Image style={styles.navRight} source={require('../../assets/img/profile.png')} /></TouchableOpacity>
+        title: strings('main.results'),
       };
     };
 
+    getBillID() {
+      return this.props.navigation.getParam('bill_id', '0').toString()
+    }
+
     componentDidMount() {
 
-      this.chatsVar = APP_STORE.CHAT_EVENT.subscribe(state => {
+      this.publicProfile = APP_STORE.PUBLICEDITPROFILE_EVENT.subscribe(state => {
         console.log("Messages:componentDidMount:chatsVar", state);
-        if (state.chats) {
+        if (state.publicProfile) {
 
           this.setState({
-            chats: state.chats,
+            chats: state.publicProfile,
             isLoading: true,
             refreshing: false,
           })
@@ -59,37 +62,15 @@ export default class Message extends Component {
           toastMsg(state.error);
         }
       });
-      getChat()
+      getChat(this.getBillID())
     }
 
-    _logout = () => {
+    showPdf(id) {
       this.props.navigation.navigate('EditProfile');
     }
 
     componentWillUnmount() {
-      this.chatsVar.unsubscribe();
-    }
-
-    showChat(item) {
-      switch(item.status) {
-        case "pa":
-        this.props.navigation.navigate('Resultados', {
-          bill_id: item.id,
-        });
-        break;
-        case "wv":
-          Alert.alert(strings('main.wait'))
-          break
-        case "np":
-          this.props.navigation.navigate('Pagar', {
-            bill_id: item.id,
-            price: item.final_price,
-            updateData:this.onRefresh.bind(this),
-          });
-          break
-        default:
-        return "#000"
-      }
+      this.publicProfile.unsubscribe();
     }
 
     onRefresh() {
@@ -105,19 +86,6 @@ export default class Message extends Component {
       })
     }
 
-    getColor(status) {
-      switch(status) {
-        case "pa":
-          return "#3FB13F"
-        case "wv":
-          return "#F9B930"
-        case "np":
-          return "#E9564F"
-        default:
-        return "#000"
-      }
-    }
-
     render() {
       if(this.state.isLoading) {
         return (
@@ -127,20 +95,14 @@ export default class Message extends Component {
               keyExtractor={( item , index ) => index.toString() }
               data={this.state.chats}
               renderItem={({item}) =>
-                <TouchableOpacity onPress={ () => this.showChat(item)}>
+                <TouchableOpacity onPress={ () => this.showPdf(item.id)}>
                   <View style={styles.viewMsg}>
                     <View style={styles.viewTexts}>
                       <Image style={styles.imgProfileItem}
-                        source={require('../../assets/img/bill.png')}
+                        source={require('../../assets/img/pdf.png')}
                       />
-                      <Text style={styles.textUser}>#{item.id} {calculateTime(item.created_at)}</Text>
+                      <Text style={styles.textUser}>#{item.id} {item.test.name}</Text>
                     </View>
-                    <View style={{
-                      width: 20,
-                      height: 20,
-                      borderRadius: 10,
-                      backgroundColor: this.getColor(item.status),
-                    }}/>
                   </View>
                 </TouchableOpacity>
               }

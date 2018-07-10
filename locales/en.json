@@ -66,7 +66,8 @@
     "password": "Change password",
     "pro": "Buy pro version",
     "pay": "Pay with credit card",
-    "changes": "Save changes"
+    "changes": "Save changes",
+    "results": "Results"
   },
   "home": {
     "actionSheet": "Pick one option",
