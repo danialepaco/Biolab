@@ -14,6 +14,7 @@ import {
 import {APP_STORE} from '../../Store';
 import {UpdateAction} from './UpdateActions';
 import styles from './style';
+import {userService} from './service';
 import {strings} from '../../i18n';
 import {isValidText, toastMsg} from "../../utils";
 import ValidationComponent from '../../utils/ValidationComponent';
@@ -32,18 +33,7 @@ class UpdatePage extends ValidationComponent {
     }
 
     componentDidMount() {
-        this.event = APP_STORE.APP_EVENT.subscribe(state => {
-            console.log(state);
-            if (state.error) {
-              this.setState({isLoading: false});
-              Alert.alert(state.error);
-                return;
-            }
-            if (state.success) {
-                this.props.navigation.goBack()
-                return;
-            }
-        });
+        
     }
 
     static navigationOptions = ({ navigation }) => {
@@ -56,7 +46,6 @@ class UpdatePage extends ValidationComponent {
 
     componentWillUnmount() {
         console.log("Forgot:componentWillUnmount");
-        this.event.unsubscribe();
     }
 
     _forgotCancel() {
@@ -77,7 +66,16 @@ class UpdatePage extends ValidationComponent {
         } else {
             if(this.isFormValid()){
                 this.setState({isLoading: true});
-                UpdateAction(this.state.oldPassword, this.state.password);
+                userService.updatePassword(this.state.oldPassword,this.state.password)
+                .then(async (response) => {
+                    const json = await response.json();
+                    if (response.ok) {
+                        this.props.navigation.goBack()
+                        return;                
+                    }
+                    this.setState({isLoading: false});
+                    Alert.alert(json);
+                });
             }else{
                 if(this.isFieldInError('oldPassword')){
                     this.getErrorsInField('oldPassword').map((result) => toastMsg(result))

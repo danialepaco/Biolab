@@ -95,8 +95,10 @@ class Pagar extends Component {
                         },
                         ],
                         { cancelable: false }
-                    )                  
+                    )
+                    return                 
                 }
+                console.log(json);
             });
         } else {
             internet();

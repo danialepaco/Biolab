@@ -14,6 +14,7 @@ export const userService = {
     changeImage,
     deleteImage,
     uploadImage,
+    logOut
 };
 
 /**
@@ -121,4 +122,13 @@ function saveProfile(token, id, state) {
     };
 
     return fetch(URL + 'accounts/' + id + '/', requestOptions);
+}
+
+function logOut() {
+    const requestOptions = {
+        method: 'DELETE',
+        headers: authHeader(APP_STORE.getToken())
+    };
+
+    return fetch(URL + 'logout/', requestOptions);
 }

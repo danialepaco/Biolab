@@ -116,7 +116,7 @@ class Ver extends Component {
                         style={styles.buttomStyle}
                         onPress={() => this.writeToClipboard(this.state.numero)}
                     >
-                        <Text style={styles.inputStyle}>{this.state.numero}</Text>
+                        <Text style={styles.inputStyle}>Número de cuenta: {this.state.numero}</Text>
                     </TouchableOpacity>
 
 
@@ -124,7 +124,7 @@ class Ver extends Component {
                         style={styles.buttomStyle}
                         onPress={() => this.writeToClipboard(this.state.name)}
                     >
-                        <Text style={styles.inputStyle}>{this.state.name}</Text>
+                        <Text style={styles.inputStyle}>Titular: {this.state.name}</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -139,10 +139,10 @@ class Ver extends Component {
                         style={styles.buttomStyle}
                         onPress={() => this.writeToClipboard(this.state.email)}
                     >
-                        <Text style={styles.inputStyle}>{this.state.email}</Text>
+                        <Text style={styles.inputStyle}>Correo: {this.state.email}</Text>
                     </TouchableOpacity>
 
-                    <Text style={styles.inputStyle}>{this.getTipo(this.state.tipo)}</Text>
+                    <Text style={styles.inputStyle}>Tipo de cuenta: {this.getTipo(this.state.tipo)}</Text>
                 </View>
             </View>
         }

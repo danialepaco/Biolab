@@ -26,7 +26,6 @@
 		15657AF303AE4687AFA5A5A8 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F726378684A4537B29ABC9F /* Zocial.ttf */; };
 		1B9502A18B7749B2A5A1A1C7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCF60834D71D43C5B499D8CF /* SimpleLineIcons.ttf */; };
 		1CA9841E13674174B536C2B7 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B00BC1BEA85F4EA686A39129 /* Foundation.ttf */; };
-		1E5BBEA84551485E8498D5AD /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0807F8B070A24BAEAB4C048D /* libRNFirebase.a */; };
 		240837EF20A8F22F00FBC63E /* libRNSpinkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 240837E420A8EF7F00FBC63E /* libRNSpinkit.a */; };
 		240837F020A8F27B00FBC63E /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FDEF562062D74100B766BF /* libRCTFBSDK.a */; };
 		2408383D20A8F62200FBC63E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2408383920A8F62100FBC63E /* Bolts.framework */; };
@@ -34,6 +33,7 @@
 		2408383F20A8F62200FBC63E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2408383B20A8F62200FBC63E /* FBSDKCoreKit.framework */; };
 		2408384020A8F62200FBC63E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2408383C20A8F62200FBC63E /* FBSDKShareKit.framework */; };
 		24115AA120768D9B00D9288C /* libRNToastNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24115AA020768B3A00D9288C /* libRNToastNative.a */; };
+		2433338320F724130094A436 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AAAEB920BC5C2B00993875 /* libRNFirebase.a */; };
 		243440A420A4B413005E7AA9 /* libRCTBEEPickerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 248D15F020A3F39700B5791C /* libRCTBEEPickerManager.a */; };
 		248D15F920A3F63D00B5791C /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 248D15F620A3F39700B5791C /* libRNDeviceInfo.a */; };
 		248D15FA20A3F6DD00B5791C /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 246B9960206B29400027179F /* libimageCropPicker.a */; };
@@ -482,11 +482,11 @@
 		2408383A20A8F62200FBC63E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		2408383B20A8F62200FBC63E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2408383C20A8F62200FBC63E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2433338420F724870094A436 /* libPods-weedmatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-weedmatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		248D164620A3FA5000B5791C /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		248D164920A3FA5000B5791C /* QBImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QBImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2498EC88792B2CCCFCBF29DE /* Pods-BiolabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiolabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiolabTests/Pods-BiolabTests.release.xcconfig"; sourceTree = "<group>"; };
 		24E92D6120B70D88005123BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		24FE648B20ADDC5100684A1D /* Biolab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Biolab.entitlements; path = Biolab/Biolab.entitlements; sourceTree = "<group>"; };
 		25F099AFC3BE4F338F250AA6 /* libLRDRCTSimpleToast.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLRDRCTSimpleToast.a; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Biolab-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Biolab-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Biolab-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Biolab-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -547,6 +547,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2433338320F724130094A436 /* libRNFirebase.a in Frameworks */,
 				240837F020A8F27B00FBC63E /* libRCTFBSDK.a in Frameworks */,
 				240837EF20A8F22F00FBC63E /* libRNSpinkit.a in Frameworks */,
 				243440A420A4B413005E7AA9 /* libRCTBEEPickerManager.a in Frameworks */,
@@ -573,7 +574,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				1E5BBEA84551485E8498D5AD /* libRNFirebase.a in Frameworks */,
 				D5C35A7CDAC044C7C2D6865E /* libPods-Biolab.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,7 +699,6 @@
 		13B07FAE1A68108700A75B9A /* Biolab */ = {
 			isa = PBXGroup;
 			children = (
-				24FE648B20ADDC5100684A1D /* Biolab.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -788,6 +787,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2433338420F724870094A436 /* libPods-weedmatch.a */,
 				2408383920A8F62100FBC63E /* Bolts.framework */,
 				2408383B20A8F62200FBC63E /* FBSDKCoreKit.framework */,
 				2408383A20A8F62200FBC63E /* FBSDKLoginKit.framework */,
@@ -1057,10 +1057,10 @@
 						DevelopmentTeam = W2U7ETVQ2D;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1836,7 +1836,6 @@
 			baseConfigurationReference = 5F462E79F5FE153727C0A912 /* Pods-Biolab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Biolab/Biolab.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1874,7 +1873,6 @@
 			baseConfigurationReference = A8E366C6E20C9E97CCC1FC36 /* Pods-Biolab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Biolab/Biolab.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2U7ETVQ2D;

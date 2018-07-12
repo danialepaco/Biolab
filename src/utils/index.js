@@ -19,7 +19,7 @@ import Toast from 'react-native-toast-native';
 const LENGUAGE = I18n.currentLocale().slice(0,2);
 // const URL = "https://dev-api.weedmatch.cl/";
 // const URL = "https://smarthlab.herokuapp.com/";
-const URL = "http://192.168.0.114:8000/";
+const URL = "http://192.168.0.7:8000/";
 
 async function checkConectivity() {
     let response = await NetInfo.isConnected.fetch()
